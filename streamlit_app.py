@@ -220,8 +220,7 @@ def main():
                     st.image(decoded_img, caption="Decoded Secret Image 🖼️")
                     buffer = io.BytesIO()
                     decoded_img.save(buffer, format="PNG")
-                    st.download_button("Download Decoded Secret Image 📥", buffer.getvalue(), "decoded_secret_image.png",
-                                       "image/png")
+                    st.download_button("Download Decoded Secret Image 📥", buffer.getvalue(), "decoded_secret_image.png","image/png")
                 else:
                     st.error("🚨 Please upload an encoded image.")
 
